@@ -37,13 +37,13 @@
       <input type="text" name="" id="city" />
       <br/>
       온도단위선택
-      <select id="tempunit">
-        <option value="standard" selected>절대온도</option>
-        <option value="metric">섭씨</option>
+      <select id="tempunit" onchange="wetherseek()">
+        <option value="standard" >절대온도</option>
+        <option value="metric" selected>섭씨</option>
         <option value="imperial">화씨</option>
       </select>
       <br />
-      <input type="button" value="날씨검색" id="go" />
+      <input type="button" value="날씨검색" id="go" onclick="wetherseek()" />
       <input type="text" id="cr" />
     </div>
   </body>
